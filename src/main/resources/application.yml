@@ -4,6 +4,10 @@ spring:
       enabled: true
   freemarker:
     cache: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
 
 
   datasource:
@@ -29,7 +33,7 @@ logging:
   level:
     org:
       hibernate:
-        SQL: DEBUG
+        SQL:
         type:
           descriptor:
             sql:
